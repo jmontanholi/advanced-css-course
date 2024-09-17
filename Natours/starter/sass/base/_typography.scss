@@ -2,7 +2,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--grey);
+  color: $color-grey;
   padding: 3rem;
   box-sizing: border-box;
 }
@@ -11,7 +11,7 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   text-transform: uppercase;
-  background: linear-gradient(to right, var(--light-green), var(--dark-green));
+  background: linear-gradient(to right, $color-light-green, $color-dark-green);
   color: transparent;
   background-clip: text;
   transition: all 0.2s;
@@ -19,18 +19,18 @@ body {
 
   &:hover {
     transform: skew(15deg, 2deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 1rem var(--transparent-black-point-two);
+    text-shadow: 0.5rem 1rem 1rem rgba($color-black, 0.2);
   }
 }
 
 .heading--tertiary {
-  font-size: var(--default-font-size);
+  font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
-  font-size: var(--default-font-size);
+  font-size: $default-font-size;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
