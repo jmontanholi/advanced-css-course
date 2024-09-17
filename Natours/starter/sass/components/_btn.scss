@@ -26,7 +26,7 @@
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    box-shadow: 0 1rem 2rem $transparent-black-low-opacity;
 
     &::after {
       transform: scaleX(1.5) scaleY(1.6);
@@ -36,12 +36,17 @@
 
   &:active {
     transform: translateY(-2px);
-    box-shadow: inset 0.1rem 0.1rem 0.5rem rgba($color-black, 0.8);
+    box-shadow: inset 0.1rem 0.1rem 0.5rem $transparent-black-high-opacity;
   }
 
   &--white {
     background-color: $color-white;
     color: $color-grey;
+  }
+
+  &--green {
+    background-color: $color-medium-green;
+    color: $color-white;
   }
 
   &--animated {
@@ -69,13 +74,13 @@
   &:hover {
     background-color: $color-medium-green;
     color: $color-white;
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    box-shadow: 0 1rem 2rem $transparent-black-low-opacity;
     transform: translateY(-2px);
   }
 
   &:active {
-    box-shadow: inset 1px 1px 5px rgba($color-black, 0.2),
-      0 1rem 2rem rgba($color-black, 0.2);
+    box-shadow: inset 1px 1px 5px $transparent-black-low-opacity,
+      0 1rem 2rem $transparent-black-low-opacity;
 
     transform: translateY(0);
   }

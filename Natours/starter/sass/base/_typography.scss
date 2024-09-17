@@ -19,7 +19,7 @@ body {
 
   &:hover {
     transform: skew(15deg, 2deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 1rem rgba($color-black, 0.2);
+    text-shadow: 0.5rem 1rem 1rem $transparent-black-low-opacity;
   }
 }
 
