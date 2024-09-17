@@ -16,6 +16,7 @@ body {
   background-clip: text;
   transition: all 0.2s;
   letter-spacing: 2px;
+  display: inline-block;
 
   &:hover {
     transform: skew(15deg, 2deg) scale(1.1);
