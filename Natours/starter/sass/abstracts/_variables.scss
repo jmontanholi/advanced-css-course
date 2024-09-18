@@ -24,13 +24,16 @@ $transparent-black-high-opacity: rgba($color-black, 0.8);
 // grid values
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+$gutter-horizontal-small: 3rem;
 
 // default font size
 $default-font-size: 1.6rem;
 
-// z-index index
-$navigation-button-z-index: 3;
-$navigation-background-z-index: 1;
-$navigation-nav-z-index: 2;
-$popup-z-index: 4;
+// z-index index - ordered
+$composition-photo-z-index: 1;
+$navigation-background-z-index: 2;
+$navigation-nav-z-index: 3;
+$navigation-button-z-index: 4;
+$popup-z-index: 5;
