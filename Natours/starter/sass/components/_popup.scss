@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
   position: fixed;
-  background-color: rgba($color-black, 0.9);
+  background-color: rgba($color-black, 0.8);
   z-index: $popup-z-index;
   top: 0;
   left: 0;
@@ -10,6 +10,13 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    background-color: rgba($color-black, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
 
   &:target {
     opacity: 1;

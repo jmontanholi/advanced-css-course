@@ -30,14 +30,18 @@
     width: 15rem;
     height: 15rem;
     float: left;
-
-    $circle: circle(50% at 50% 50%);
-    -webkit-shape-outside: $circle;
-    shape-outside: $circle;
-    -webkit-clip-path: $circle;
-    clip-path: $circle;
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+    border-radius: 50%;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      $circle: circle(50% at 50% 50%);
+      -webkit-shape-outside: $circle;
+      shape-outside: $circle;
+      -webkit-clip-path: $circle;
+      clip-path: $circle;
+      border-radius: none;
+    }
 
     @include respond(phone) {
       transform: translateX(-3rem) skewX(0);
