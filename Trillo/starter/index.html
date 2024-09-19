@@ -15,8 +15,10 @@
   </head>
   <body>
     <div class="container">
+      <!-- Header -->
       <header class="header">
         <img src="img/logo.png" alt="trillo logo" class="logo" />
+        <!-- Search bar -->
         <form action="#" class="search">
           <input
             type="text"
@@ -29,6 +31,7 @@
             </svg>
           </button>
         </form>
+        <!-- User nav section -->
         <nav class="user-nav">
           <div class="user-nav__icon-box">
             <svg class="user-nav__icon">
@@ -36,12 +39,14 @@
             </svg>
             <span class="user-nav__notification">7</span>
           </div>
+
           <div class="user-nav__icon-box">
             <svg class="user-nav__icon">
               <use xlink:href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
           </div>
+
           <div class="user-nav__user">
             <img
               src="img/user.jpg"
@@ -49,10 +54,18 @@
               class="user-nav__user-photo"
             />
             <span class="user-nav__user-name">Jonas</span>
+            <div class="user-settings">
+              <ul class="user-settings__list">
+                <li class="user-settings__item">Profile</li>
+                <li class="user-settings__item">Settings</li>
+                <li class="user-settings__item">Log out</li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
       <div class="content">
+        <!-- Sidebar nav section -->
         <nav class="sidebar">
           <ul class="side-nav">
             <li class="side-nav__item side-nav__item--active">
@@ -91,7 +104,9 @@
 
           <div class="legal">&copy; 2017 by Trillo. All rights reserved.</div>
         </nav>
+        <!-- Hotel view (main content)-->
         <main class="hotel-view">
+          <!-- Hotel pictures -->
           <div class="gallery">
             <figure class="gallery__item">
               <img
@@ -115,6 +130,7 @@
               />
             </figure>
           </div>
+          <!-- Hotel overview (Title, ratings and map) -->
           <div class="overview">
             <h1 class="overview__heading">Hotel Las Palmas</h1>
             <div class="overview__stars">
@@ -146,6 +162,7 @@
             </div>
           </div>
           <div class="detail">
+            <!-- Hotel details (text, features and recommendations) -->
             <div class="description">
               <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
@@ -169,7 +186,7 @@
               </ul>
               <div class="recommend">
                 <p class="recommend__count">
-                  Lucy and 3 other friends recomment this hotel.
+                  Lucy and 3 other friends recommend this hotel.
                 </p>
                 <div class="recommend__friends">
                   <img
@@ -195,6 +212,7 @@
                 </div>
               </div>
             </div>
+            <!-- User reviews section -->
             <div class="user-reviews">
               <figure class="review">
                 <blockquote class="review__text">
@@ -235,6 +253,7 @@
               <button class="btn-inline">Show all <span>&rarr;</span></button>
             </div>
           </div>
+          <!-- Call to action with animated button -->
           <div class="cta">
             <h2 class="cta__book-now">
               Good news! We have 4 free rooms for your selected dates!
