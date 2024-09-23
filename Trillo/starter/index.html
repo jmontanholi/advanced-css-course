@@ -30,6 +30,15 @@
               <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
             </svg>
           </button>
+          <!-- Search suggestion dropdown -->
+          <div class="search__suggestion-container">
+            <ul class="search__suggestion-list">
+              <li class="search__suggestion-item">Hotel Las Palmas</li>
+              <li class="search__suggestion-item">Hotel Las Palmas</li>
+              <li class="search__suggestion-item">Hotel Las Palmas</li>
+              <li class="search__suggestion-item">...</li>
+            </ul>
+          </div>
         </form>
         <!-- User nav section -->
         <nav class="user-nav">
@@ -45,6 +54,35 @@
               <use xlink:href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
+            <!-- Chat preview dropdown -->
+            <div class="chat-preview">
+              <ul class="chat-preview__list">
+                <li class="chat-preview__item">
+                  <h1 class="chat-preview__hotel-name">Hotel Las Palmas</h1>
+                  <p class="chat-preview__message">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores pariatur, sunt eius delectus eaque dicta aperiam
+                    nobis nulla placeat quae.
+                  </p>
+                </li>
+                <li class="chat-preview__item">
+                  <h1 class="chat-preview__hotel-name">Hotel Las Palmas</h1>
+                  <p class="chat-preview__message">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores pariatur, sunt eius delectus eaque dicta aperiam
+                    nobis nulla placeat quae.
+                  </p>
+                </li>
+                <li class="chat-preview__item">
+                  <h1 class="chat-preview__hotel-name">Hotel Las Palmas</h1>
+                  <p class="chat-preview__message">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores pariatur, sunt eius delectus eaque dicta aperiam
+                    nobis nulla placeat quae.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="user-nav__user">
@@ -54,6 +92,7 @@
               class="user-nav__user-photo"
             />
             <span class="user-nav__user-name">Jonas</span>
+            <!-- User settings dropdown -->
             <div class="user-settings">
               <ul class="user-settings__list">
                 <li class="user-settings__item">Profile</li>
@@ -109,25 +148,40 @@
           <!-- Hotel pictures -->
           <div class="gallery">
             <figure class="gallery__item">
-              <img
-                src="img/hotel-1.jpg"
-                alt="Photo of hotel 1"
-                class="gallery__photo"
-              />
+              <div class="gallery__photo-container">
+                <img
+                  src="img/hotel-1.jpg"
+                  alt="Photo of hotel 1"
+                  class="gallery__photo"
+                />
+                <figcaption class="gallery__caption">
+                  <span> Hotel las Palmas </span>
+                </figcaption>
+              </div>
             </figure>
             <figure class="gallery__item">
-              <img
-                src="img/hotel-2.jpg"
-                alt="Photo of hotel 2"
-                class="gallery__photo"
-              />
+              <div class="gallery__photo-container">
+                <img
+                  src="img/hotel-2.jpg"
+                  alt="Photo of hotel 2"
+                  class="gallery__photo"
+                />
+                <figcaption class="gallery__caption">
+                  <span> Hotel las Palmas </span>
+                </figcaption>
+              </div>
             </figure>
             <figure class="gallery__item">
-              <img
-                src="img/hotel-3.jpg"
-                alt="Photo of hotel 3"
-                class="gallery__photo"
-              />
+              <div class="gallery__photo-container">
+                <img
+                  src="img/hotel-3.jpg"
+                  alt="Photo of hotel 3"
+                  class="gallery__photo"
+                />
+                <figcaption class="gallery__caption">
+                  <span> Hotel las Palmas </span>
+                </figcaption>
+              </div>
             </figure>
           </div>
           <!-- Hotel overview (Title, ratings and map) -->
